@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <TextView
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22sp"
+            android:text="RC CC Camera"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo" />
+
+
+        <EditText
+            android:id="@+id/etIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_edittext_search"
+            android:drawablePadding="5dp"
+            android:hint="IP Address"
+            android:padding="10dp"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/etPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_edittext_search"
+            android:drawablePadding="5dp"
+
+            android:hint="port"
+
+            android:inputType="textPassword"
+            android:padding="10dp"
+
+            android:textSize="13sp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_button"
+            android:onClick="goSaveIp"
+
+
+            android:text="Save"
+            android:textColor="#ffffff" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

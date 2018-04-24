@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select A Department"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spnrDepartments"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_style"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select Class"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spnrClass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_style"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+            android:background="@drawable/stream_gradient_button"
+            android:onClick="goViewCameras"
+            android:text="View Cameras"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>
